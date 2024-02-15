@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navigation Bar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="indexstyle.css">
+</head>
+<style>
+	body,
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Style for the navigation bar */
+	nav {
+		background-color: #333;
+		/* Dark background color */
+		color: #fff;
+		/* White text color */
+		padding: 10px 0;
+		/* Padding at the top and bottom */
+	}
+
+	/* Style for the navigation links */
+	ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	li {
+		display: inline;
+		margin-right: 20px;
+		/* Spacing between navigation items */
+	}
+
+	a {
+		text-decoration: none;
+		/* Remove underline from links */
+		color: #fff;
+		/* White text color */
+	}
+
+	/* Style for links on hover */
+	a:hover {
+		text-decoration: underline;
+		/* Underline the link on hover */
+	}
+	/* Apply a background color to the body */
+body {
+  background-color: #f0f0f0; /* Light gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the form container */
+.form {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+  max-width: 400px; /* Maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px; /* Space from the top */
+}
+
+/* Style for the form title */
+.form h1 {
+  color: #333; /* Dark gray text color */
+  font-size: 24px;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded input fields */
+}
+
+/* Style for the submit button */
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the "Not registered yet?" link */
+p a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+/* Style for the link on hover */
+p a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+</style>
+
+<body>
+	<nav>
+		<ul>
+
+			<li><a href="/register">Sign up!!</a></li>
+			<li><a href="/login">Login</a></li>
+			 		</ul>
+	</nav>
+	<!-- <h1>login</h1>
+
+	<form action="/login" method="POST">
+		<input type="text" name="username" placeholder="username">
+		<input type="password" name="password" placeholder="password">
+		<button>login</button>
+
+	</form> -->
+	<div class="form">
+        <h1>Log In</h1>
+        <form action="" method="post" name="login">
+        <input type="text" name="username" placeholder="Username" required /><br>
+        <input type="password" name="password" placeholder="Password" required />
+        <br>
+		<button>login</button>
+
+        <!-- <input name="submit" type="submit" value="Login" /> -->
+        </form>
+        <p>Not registered yet? <a href='/register'>Register Here</a></p>
+        </div>
+</body>
+
+</html>
